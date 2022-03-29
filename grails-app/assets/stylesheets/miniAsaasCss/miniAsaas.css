@@ -1,0 +1,53 @@
+body {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.containerImg {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+#cadastroCliente {
+    color: rgb(0, 0, 205);
+    font-size: 50px;
+    text-align: center;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    border-radius: 4px; 
+    border-color: blue;
+}
+
+.listaCss{
+    padding: 1px;
+}
+
+.botao {
+
+    text-align: center;
+    border-radius: 4px;
+    width: 410px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(37, 37, 255);
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.botao:hover {
+    background-color: rgb(58, 127, 255);
+}
+
+form {
+    margin: 0 auto;
+    width: 430px;
+}
