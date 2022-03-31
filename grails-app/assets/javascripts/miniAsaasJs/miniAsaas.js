@@ -19,29 +19,19 @@ document.getElementById('cepCliente').addEventListener('focusout', getCep);
 
 
 let botaoAdd = document.querySelector("#adicionaCliente")
-
-let emailV = document.querySelector('#emailCliente')
-let nomeV = document.querySelector('#nomeCliente')
-let cpfV = document.querySelector('#cpfCliente')
-let telefoneV = document.querySelector('#telefoneCliente')
-let cepV =  document.querySelector('#cepCliente')
-let ruaV = document.querySelector('#ruaCliente')
-let bairroV =  document.querySelector('#bairroCliente')
-let cidadeV =  document.querySelector('#cidadeCliente')
-let estadoV =  document.querySelector('#estadoCliente')
-
+ 
 document.querySelector("#listaCadastro").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const valueEmail = emailV.value
-    const valueNome = nomeV.value
-    const valueCpf = cpfV.value
-    const valueTelefone = telefoneV.value
-    const valueCep = cepV.value
-    const valueRua = ruaV.value
-    const valueBairro = bairroV.value
-    const valueCidade = cidadeV.value
-    const valueEstado = estadoV.value
+    const valueEmail = document.querySelector('#emailCliente').value
+    const valueNome = document.querySelector('#nomeCliente').value
+    const valueCpf = document.querySelector('#cpfCliente').value
+    const valueTelefone = document.querySelector('#telefoneCliente').value
+    const valueCep = document.querySelector('#cepCliente').value
+    const valueRua = document.querySelector('#ruaCliente').value
+    const valueBairro = document.querySelector('#bairroCliente').value
+    const valueCidade = document.querySelector('#cidadeCliente').value
+    const valueEstado = document.querySelector('#estadoCliente').value
     
     
     console.log(retornaInfo())
@@ -52,15 +42,15 @@ document.querySelector("#listaCadastro").addEventListener("submit", function(eve
 
 function retornaInfo(){
     return {
-        valueEmail: emailV.value,
-        valueNome: nomeV.value,
-        valueCpf: cpfV.value,
-        valueTelefone: telefoneV.v,
-        valueCep: cepV.value,
-        valueRua: ruaV.value,
-        valueBairro: bairroV.value,
-        valueCidade: cidadeV.value,
-        valueEstado: estadoV.value
+        valueEmail: emailCliente.value,
+        valueNome: nomeCliente.value,
+        valueCpf: cpfCliente.value,
+        valueTelefone: telefoneCliente.value,
+        valueCep: cepCliente.value,
+        valueRua: ruaCliente.value,
+        valueBairro: bairroCliente.value,
+        valueCidade: cidadeCliente.value,
+        valueEstado: estadoCliente.value
     }
 }
 
