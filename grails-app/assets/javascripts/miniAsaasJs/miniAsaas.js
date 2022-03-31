@@ -4,10 +4,14 @@ function getCep() {
 
     fetch(`https://viacep.com.br/ws/${cepV}/json`).then(result => result.json()) 
     .then(data => { 
-        let ruaV = document.querySelector('#ruaCliente').value = data.logradouro
-        let bairroV =  document.querySelector('#bairroCliente').value = data.bairro
-        let cidadeV =  document.querySelector('#cidadeCliente').value = data.localidade
-        let estadoV =  document.querySelector('#estadoCliente').value = data.uf
+        if (!("erro" in data)) {
+            document.querySelector('#ruaCliente').value = data.logradouro
+            document.querySelector('#bairroCliente').value = data.bairro
+            document.querySelector('#cidadeCliente').value = data.localidade
+            document.querySelector('#estadoCliente').value = data.uf
+        } else {
+            alert("CEP não encontrado");
+        }
      })
 }
 
