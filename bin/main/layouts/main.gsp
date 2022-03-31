@@ -12,13 +12,15 @@
     <asset:stylesheet src="application.css"/>
 
     <g:layoutHead/>
+
+    <asset:javascript src="application.js"/>
+
 </head>
 
 <body>
 
-
-
-<asset:javascript src="application.js"/>
+<g:layoutBody/>
 
 </body>
 </html>
+
