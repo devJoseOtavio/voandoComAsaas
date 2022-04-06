@@ -33,25 +33,16 @@ document.querySelector("#listaCadastro").addEventListener("submit", function(eve
     const valueCidade = document.querySelector('#cidadeCliente').value
     const valueEstado = document.querySelector('#estadoCliente').value
     
-    
-    console.log(retornaInfo())
+    var customer = {}
+    var form = document.querySelector("form")
+    var data = new FormData(form)
+    data.forEach(function(value, key){
+        customer[key] = value;
+    });
+    console.log(customer)
+
     alert("Cliente Cadastrado")
     document.querySelector("#listaCadastro").reset()
     
 })
-
-function retornaInfo(){
-    return {
-        valueEmail: emailCliente.value,
-        valueNome: nomeCliente.value,
-        valueCpf: cpfCliente.value,
-        valueTelefone: telefoneCliente.value,
-        valueCep: cepCliente.value,
-        valueRua: ruaCliente.value,
-        valueBairro: bairroCliente.value,
-        valueCidade: cidadeCliente.value,
-        valueEstado: estadoCliente.value
-    }
-}
-
 
