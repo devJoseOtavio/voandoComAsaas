@@ -29,7 +29,7 @@ input {
     padding: 1px;
 }
 
-.botao {
+.botaoCadastro {
 
     text-align: center;
     border-radius: 4px;
@@ -43,7 +43,7 @@ input {
     transition: 400ms;
 }
 
-.botao:hover {
+.botaoCadastro:hover {
     background-color: rgb(58, 127, 255);
 }
 
