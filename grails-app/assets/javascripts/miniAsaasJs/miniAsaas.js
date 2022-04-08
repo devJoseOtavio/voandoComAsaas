@@ -17,21 +17,10 @@ function getCep() {
 
 document.getElementById('cepCliente').addEventListener('focusout', getCep);
 
-
 let botaoAdd = document.querySelector("#adicionaCliente")
  
 document.querySelector("#formularioCadastro").addEventListener("submit", function(event) {
     event.preventDefault();
-
-    document.querySelector('#emailCliente').value
-    document.querySelector('#nomeCliente').value
-    document.querySelector('#cpfCliente').value
-    document.querySelector('#telefoneCliente').value
-    document.querySelector('#cepCliente').value
-    document.querySelector('#ruaCliente').value
-    document.querySelector('#bairroCliente').value
-    document.querySelector('#cidadeCliente').value
-    document.querySelector('#estadoCliente').value
     
     var customer = {}
     var form = document.querySelector("form")
