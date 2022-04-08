@@ -11,7 +11,7 @@
             <asset:image src="skin/miniAsaas/asaas.jpg" alt="asaas" />
         </div>
         <h1 class="cadastroCliente">Cadastro</h1>
-        <form id="listaCadastro"> 
+        <form id="formularioCadastro"> 
             <div class="listaCss">
                 <input id="emailCliente" name="email" type="text" placeholder="Email" class="campo" required>
             </div>
