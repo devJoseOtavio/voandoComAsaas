@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <asset:stylesheet src="miniAsaasCss/miniAsaas.css" rel="stylesheet" />
+    <asset:stylesheet src="index/indexCss/index.css" rel="stylesheet" />
     <title>AsaasCadastro</title>
 </head>
 
@@ -11,7 +11,7 @@
             <asset:image src="skin/miniAsaas/asaas.jpg" alt="asaas" />
         </div>
         <h1 class="cadastroCliente">Cadastro</h1>
-        <form id="listaCadastro"> 
+        <form id="formularioCadastro"> 
             <div class="listaCss">
                 <input id="emailCliente" name="email" type="text" placeholder="Email" class="campo" required>
             </div>
@@ -39,9 +39,9 @@
             <div class="listaCss">
                 <input id="estadoCliente" name="estado" type="text" placeholder="Estado">
             </div>
-            <button id="adicionaCliente" class="botao" type="submit">ADICIONAR</button>
+            <button id="adicionaCliente" class="botaoCadastro" type="submit">ADICIONAR</button>
         </form>
     </main>
-    <asset:javascript src="miniAsaasJs/miniAsaas.js" />
+    <asset:javascript src="index/indexController/indexController.js" />
 </body>
 </html>
